@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>ECG by Thai Ton Minh</TITLE>
+</HEAD>
+<BODY>
+<DIV ALIGN="CENTER">
+
+<FONT FACE="CALIBRI"SIZE="6"><B><I>ELECTROCARDIOGRAPHY</B></I></FONT><BR>
+</DIV>
+<HR>
+<FONT FACE="CALIBRI"SIZE="4"><B><I>I. Introduction to ECG</B></I> <BR>
+ECG is electrocardiography written in short.<br>
+It is a technology that allow you to track electrical activity in human heart.<br>
+By having 12 electrodes placing on skin surface in specific parts of body, we can transduce ionic currents and convert it into ECG signal.<BR>
+ECG is crucial for treating, diagnosing cardiac defections.<BR>
+Check it out<br>
+
+<FONT FACE="CALIBRI"SIZE="4"><B><I>II. Electrical activity in heart</B></I><BR>
+
+The electrical activity in heart makes our heart contract and relax so that we can pump blood.<br>
+Ions Na+, Ca2+, K+ in cardiac muscle cells create repolarization, depolarization by moving through cell membrane.These processes control muscle activity in our heart<BR>
+Cells depolarizing and repolarizing produce transmembrane voltage and system measures it indirectly, also, these events produce ionic currents within the body which can be transduced by electrodes.<br>
+
+
+<FONT FACE="CALIBRI"SIZE="4"><B><I>III. Electrodes and 12 leads</B></I><BR>
+
+Three active electrodes placed on extremities are left arm (LA), right arm (RA), left leg (LL), ground electrode right leg (RL)<BR>
+From that, we achieve 3 leads these are biopolar leads:<BR>
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/limbs_leads_calculation.gif" WIDTH="200" HEIGHT="70"><BR></DIV>
+
+
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/biopolar.gif" WIDTH="300" HEIGHT="400"><BR>
+Principle of Biomedical Instrumentation-Andrew G.Webb<BR></DIV>
+<BR>
+
+We calculate unipolar augmented leads<BR>
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/augment_leads.gif" WIDTH="400" HEIGHT="70"><BR></DIV>
+
+Six precordial leads (unipolar) V1 to V6 are calculated with respect to WTC( Wilson's central terminal)<BR>
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/wilson.gif" WIDTH="290" HEIGHT="60"><BR></DIV>
+
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/precordial.gif" WIDTH="400" HEIGHT="400"><BR>
+Principle of Biomedical Instrumentation-Andrew G.Webb<BR><br>
+
+<IMG SRC="picture_web_design/sixleads.gif" WIDTH="400" HEIGHT="400"><BR>
+A text book of medical instruments-S.Ananthi, 2005<br><BR></DIV>
+
+
+<FONT FACE="CALIBRI"SIZE="4"><B><I>IV. ECG system design</B></I><BR>
+Different companies, corp. have different ECG systems design, It is impossible to cover them all. so we will just consider one. And this I will provide you knowledge on one channel ECG.<BR>
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/one_channel.gif" WIDTH="500" HEIGHT="300"><BR>
+EXPERIMENT 1 ELECTROCARDIOGRAPHY pg.edu.pl</DIV><BR><BR>
+Frequency ranges from 0.1 to 100 Hz, maximum amplitude is 1mV in normal signal and we will amplify it. A silver/silver chloride electrode is used. <BR>
+
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/lead_selector.gif" WIDTH="500" HEIGHT="300"><BR>
+EXPERIMENT 1 ELECTROCARDIOGRAPHY pg.edu.pl</DIV><BR><BR>
+
+<DIV ALIGN="CENTER">
+<IMG SRC="picture_web_design/ECG_filter.gif" WIDTH="900" HEIGHT="500"><BR>
+EXPERIMENT 1 ELECTROCARDIOGRAPHY pg.edu.pl</DIV><BR><BR>
+
+Lead selector help ECG choose lead, input buffers transfer signal without any loss, input buffers have impedance matches the impedance between skin-electrode .<BR>
+Preamplifier is an instrumentation amplifier which reject common mode noise.<BR>
+Low-pass filter rejects EMG noise. High-pass filter rejects DC offset voltage. Band-reject filter removes 50/60Hz noise. Opto isolator will be used in isolation circuit which protect patient from current leakage.<BR>
+
+Also, not mentioned in above system, there are driven right leg circuit that removes common mode signal, lead-off circuit which is designed to alert if impeadance between skin and electrode is higher than allowance.<BR>
+
+<FONT FACE="CALIBRI"SIZE="4"><B><I>VI. ECG summary</B></I><BR>
+Let see a video on youtube( <A HREF="https://www.youtube.com/watch?v=kwLbSx9BNbU">ECG video</A>)<BR>
+<DIV ALIGN="CENTER"><video width="500" height="500" controls><source src="video_web_design/ECG.mp4" type="video/mp4"></video>
+</DIV><BR><BR>
+
+
+
+
+
+<HR>
+
+please view<A HREF="bio_instrument_home.html"> home</A><br>
+please view<A HREF="main_content_02_EEG.html"> electroencephalography</A><br>
+
+<HR>
+
+<FONT FACE="CALIBRI"SIZE="4"><B><I>V. Reference</B></I><BR>
+[1] "A text book of medical instruments" - S.Ananthi, 2005<BR>
+[2] EXPERIMENT 1 ELECTROCARDIOGRAPHY pg.edu.pl<BR>
+[3] Principle of Biomedical Instrumentation-Andrew G.Webb<BR><HR>
+
+<P>
+comment:<BR>
+<TEXTAREA NAME="comment" COLS="40" ROWS="5">
+comment here:
+</TEXTAREA>
+</P>
+
+<P>
+<INPUT TYPE="submit" VALUE="submit">
+</P>
+
+
+
+
+
+</BODY>
+</HTML>
